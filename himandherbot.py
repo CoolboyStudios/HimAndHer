@@ -3,7 +3,7 @@ import datetime #adds functionality for printing the date
 import os
 from telegram.ext import Updater, CommandHandler
 os.environ['TZ'] = 'Slovenia/Ljubljana' #makes the program recognize the current timezone as mine
-UPDATER = Updater(token='[bot_token]')
+UPDATER = Updater(os.environ["TELEGRAM_TOKEN"])
 DISPATCHER = UPDATER.dispatcher
 USER1_TASKS = []
 USER2_TASKS = []
